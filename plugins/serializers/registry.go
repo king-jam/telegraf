@@ -2,7 +2,6 @@ package serializers
 
 import (
 	"fmt"
-	"github.com/influxdata/telegraf/plugins/serializers/prometheusremotewrite"
 	"time"
 
 	"github.com/influxdata/telegraf"
@@ -11,7 +10,9 @@ import (
 	"github.com/influxdata/telegraf/plugins/serializers/influx"
 	"github.com/influxdata/telegraf/plugins/serializers/json"
 	"github.com/influxdata/telegraf/plugins/serializers/nowmetric"
+	"github.com/influxdata/telegraf/plugins/serializers/opentelemetry"
 	"github.com/influxdata/telegraf/plugins/serializers/prometheus"
+	"github.com/influxdata/telegraf/plugins/serializers/prometheusremotewrite"
 	"github.com/influxdata/telegraf/plugins/serializers/splunkmetric"
 	"github.com/influxdata/telegraf/plugins/serializers/wavefront"
 )
@@ -129,6 +130,8 @@ func NewSerializer(config *Config) (Serializer, error) {
 		serializer, err = NewPrometheusSerializer(config)
 	case "prometheusremotewrite":
 		serializer, err = NewPrometheusRemoteWriteSerializer(config)
+	case "opentelemetry":
+		serializer, err = NewOpentelemetrySerializer()
 	default:
 		err = fmt.Errorf("Invalid data format: %s", config.DataFormat)
 	}
@@ -193,6 +196,10 @@ func NewSplunkmetricSerializer(splunkmetric_hec_routing bool, splunkmetric_multi
 
 func NewNowSerializer() (Serializer, error) {
 	return nowmetric.NewSerializer()
+}
+
+func NewOpentelemetrySerializer() (Serializer, error) {
+	return opentelemetry.NewSerializer()
 }
 
 func NewInfluxSerializerConfig(config *Config) (Serializer, error) {
