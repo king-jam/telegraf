@@ -1,0 +1,41 @@
+{
+	"resource": {
+		"attributes": [
+			{
+				"key": "",
+				"value": {}
+			}
+		],
+		"dropped_attributes_count": 0
+	},
+	"instrumentation_library_metrics": [
+		{
+			"instrumentation_library": {
+				"name": "my library",
+				"version": "my other library",
+			},
+			"metrics": [
+				{
+					"name": "metric name",
+					"description": "my metric description",
+					"unit": "ms",
+					"data": {
+						"data_points": [
+							{
+								"labels": [
+									{
+									"key": "",
+									"value": ""
+									}
+								],
+								"start_time_unix_nano": "0",
+								"time_unix_nano": "123154123",
+								"value": 22
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
