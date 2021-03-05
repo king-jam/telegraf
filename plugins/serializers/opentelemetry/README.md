@@ -46,7 +46,7 @@ cpu,cpu=cpu1,host=loaner usage_active=12.500000010610771,usage_guest=2.083333332
 {
   "metrics": [
     {
-      "name": "time_active",
+      "name": "cpu_time_active",
       "data": {
         "data_points": [
           {
@@ -81,7 +81,7 @@ cpu,cpu=cpu1,host=loaner usage_active=12.500000010610771,usage_guest=2.083333332
       }
     },
     {
-      "name": "time_guest",
+      "name": "cpu_time_guest",
       "data": {
         "data_points": [
           {
@@ -116,7 +116,7 @@ cpu,cpu=cpu1,host=loaner usage_active=12.500000010610771,usage_guest=2.083333332
       }
     },
     {
-      "name": "time_guest_nice",
+      "name": "cpu_time_guest_nice",
       "data": {
         "data_points": [
           {
@@ -151,7 +151,7 @@ cpu,cpu=cpu1,host=loaner usage_active=12.500000010610771,usage_guest=2.083333332
       }
     },
     {
-      "name": "time_idle",
+      "name": "cpu_time_idle",
       "data": {
         "data_points": [
           {
@@ -186,7 +186,7 @@ cpu,cpu=cpu1,host=loaner usage_active=12.500000010610771,usage_guest=2.083333332
       }
     },
     {
-      "name": "usage_active",
+      "name": "cpu_usage_active",
       "data": {
         "data_points": [
           {
@@ -221,7 +221,7 @@ cpu,cpu=cpu1,host=loaner usage_active=12.500000010610771,usage_guest=2.083333332
       }
     },
     {
-      "name": "usage_guest",
+      "name": "cpu_usage_guest",
       "data": {
         "data_points": [
           {
@@ -256,7 +256,7 @@ cpu,cpu=cpu1,host=loaner usage_active=12.500000010610771,usage_guest=2.083333332
       }
     },
     {
-      "name": "usage_guest_nice",
+      "name": "cpu_usage_guest_nice",
       "data": {
         "data_points": [
           {
@@ -291,7 +291,7 @@ cpu,cpu=cpu1,host=loaner usage_active=12.500000010610771,usage_guest=2.083333332
       }
     },
     {
-      "name": "usage_idle",
+      "name": "cpu_usage_idle",
       "data": {
         "data_points": [
           {
