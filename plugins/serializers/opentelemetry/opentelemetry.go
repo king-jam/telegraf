@@ -26,7 +26,7 @@ func (s *Serializer) SerializeBatch(metrics []telegraf.Metric) ([]byte, error) {
 		oMetric.Name = metric.Name()
 		//oMetric.Description	= metric.
 		// oMetric.Unit = metric.
-		oMetric.
+		//oMetric.
 	}
 	return nil, nil
 }
